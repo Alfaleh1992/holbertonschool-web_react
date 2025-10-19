@@ -13,7 +13,7 @@ const teacher3: Teacher = {
   lastName: "Doe",
   fullTimeEmployee: false,
   location: "London",
-  contract: false
+  contract: false,
 };
 console.log(teacher3);
 
@@ -27,7 +27,7 @@ const director1: Directors = {
   lastName: "Doe",
   location: "London",
   fullTimeEmployee: true,
-  numberOfReports: 17
+  numberOfReports: 17,
 };
 console.log(director1);
 
@@ -37,6 +37,6 @@ export interface printTeacherFunction {
 }
 
 export const printTeacher: printTeacherFunction = (firstName, lastName) =>
-  \`\${firstName.charAt(0)}. \${lastName}\`;
+  `${firstName.charAt(0)}. ${lastName}`;
 
 console.log(printTeacher("John", "Doe")); // J. Doe
